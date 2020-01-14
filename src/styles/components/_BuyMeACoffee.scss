@@ -1,0 +1,16 @@
+#bmc-wbtn {
+  background-color: var(--bg) !important;
+  color: var(--quote-text-color) !important;
+  position: fixed;
+
+  svg > path {
+    fill: var(--quote-text-color) !important;
+  }
+}
+
+#bmc-wbtn + div {
+  display: none !important;
+  background-color: var(--quote-card-color-hover) !important;
+  color: var(--quote-text-color) !important;
+  border-radius: 8px !important;
+}

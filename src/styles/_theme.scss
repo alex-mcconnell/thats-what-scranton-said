@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  // App
+  --bg: #232b32;
+  --base-font-family: 'Roboto';
+  --base-text-color: white;
+
+  // SearchBar
+  --search-bar-color: transparent;
+
+  // Quote
+  --quote-card-color: #1a1d24;
+  --quote-card-color-hover: #12151a;
+  --quote-text-color: white;
+  --quote-font-family: 'Roboto';
+  --quote-highlight-color: #ffe066;
+  --cite-font-family: 'Roboto';
+  --cite-text-color: white;
+}
+
+// Themes
+[data-theme='dark'] {
+  // App
+  --bg: #232b32;
+  --base-font-family: 'Roboto';
+  --base-text-color: white;
+
+  // SearchBar
+  --search-bar-color: white;
+
+  // Quote
+  --quote-card-color: #1a1d24;
+  --quote-card-color-hover: #12151a;
+  --quote-text-color: white;
+  --quote-font-family: 'Roboto';
+  --quote-highlight-color: #ffe066;
+  --cite-font-family: 'Roboto';
+  --cite-text-color: white;
+}
+
+[data-theme='light'] {
+  // App
+  --bg: #fff;
+  --base-font-family: 'Roboto';
+  --base-text-color: #3c4043;
+
+  // SearchBar
+  --search-bar-color: #fff;
+
+  // Quote
+  --quote-card-color: #f1f0dc;
+  --quote-card-color-hover: #f0edc8;
+  --quote-text-color: black;
+  --quote-font-family: 'Roboto';
+  --quote-highlight-color: #ffe066;
+  --cite-font-family: 'Roboto';
+  --cite-text-color: black;
+}

@@ -1,0 +1,49 @@
+.quote-container {
+  background-color: var(--quote-card-color);
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  width: calc(100% - 16px);
+  margin: 0 auto 10px;
+  padding: 1rem;
+  transition: 0.3s;
+  cursor: default;
+
+  &:hover {
+    background-color: var(--quote-card-color-hover);
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  q {
+    font-size: 1.1rem;
+    color: var(--quote-text-color);
+    font-family: var(--quote-font-family);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  mark {
+    padding: 0px;
+    background-color: var(--quote-highlight-color);
+  }
+
+  .cite-container {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 1rem;
+      border-radius: 50%;
+      max-height: 3.1rem;
+    }
+
+    cite {
+      font-size: 0.9rem;
+      color: var(--cite-text-color);
+      font-family: var(--cite-font-family);
+    }
+  }
+}

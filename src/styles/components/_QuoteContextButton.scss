@@ -1,0 +1,47 @@
+// QuoteContextButton
+.quote-context-button-container {
+  width: 100%;
+  display: flex;
+
+  .quote-context-button {
+    display: flex;
+    background: transparent;
+    height: 38px;
+    border: 1px solid #dfe1e5;
+    color: var(--base-text-color);
+    border-radius: 20px;
+    padding: 5px 1rem 6px;
+    font-size: 1rem;
+    line-height: 2rem;
+    width: calc(100% - 16px);
+    margin: calc(2rem - 10px) auto 0;
+    font-family: var(--quote-font-family);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: var(--quote-card-color-hover);
+    }
+
+    svg {
+      height: 100%;
+      fill: var(--base-text-color);
+    }
+
+    span {
+      width: calc(100% - 26 * 2px);
+    }
+
+    .upArrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  .topButton {
+    margin: 0 auto 2rem;
+  }
+}

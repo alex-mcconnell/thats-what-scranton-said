@@ -1,0 +1,39 @@
+// Reset
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+// End reset
+
+body {
+  background: var(--bg);
+}
+
+h1,
+q,
+cite {
+  letter-spacing: 0px;
+}
+
+#root {
+  max-width: 736px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}

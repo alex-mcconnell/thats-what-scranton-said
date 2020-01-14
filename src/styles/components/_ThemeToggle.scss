@@ -1,0 +1,58 @@
+.switch {
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 38px;
+
+  input {
+    display: none;
+
+    &:checked + .slider:before {
+      transform: translateX(16px);
+      background-color: white;
+    }
+
+    &:checked ~ .night {
+      background-color: var(--quote-card-color);
+      transform: translateX(13px);
+    }
+  }
+
+  .slider {
+    background-color: var(--quote-card-color);
+    border: 1px solid var(--bg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.25s ease-in-out;
+    border-radius: 11px;
+
+    &:before {
+      background-color: #ffb200;
+      content: '';
+      height: 16px;
+      top: 2px;
+      left: 2px;
+      position: absolute;
+      transition: 0.25s ease-in-out;
+      width: 16px;
+      border-radius: 50%;
+    }
+  }
+
+  .night {
+    background: transparent;
+    left: 0px;
+    top: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.25s ease-in-out;
+    z-index: 999;
+    border-radius: 20px;
+    width: 17px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,32 @@
+.quote-search-bar-container {
+  width: calc(100% - 16px);
+  display: flex;
+  margin: 0 auto;
+
+  .quote-search-bar {
+    background: var(--bg);
+    height: 38px;
+    border: none;
+    border-bottom: 1px solid var(--base-text-color);
+    padding: 5px 1rem 6px;
+    font-size: 1.5rem;
+    width: 100%;
+    font-family: var(--quote-font-family);
+    margin: 0 auto;
+    color: var(--base-text-color);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .quote-search-bar-button {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--base-text-color);
+    svg {
+      height: 2rem;
+      fill: var(--base-text-color);
+    }
+  }
+}
